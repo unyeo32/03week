@@ -4,15 +4,11 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	float a;
+	int a;
 	float b;
+	printf("input two integers:");
+	scanf("%d %f", &a, &b);
 	
-	printf("분자를 입력:");
-	scanf("%f", &a);
-	printf("분모를 입력:");
-	scanf("%f", &b);
-	float c =a/b;
-	
-	printf("나누기의 결과는%f\n", c);
+	printf("result is %f\n", a/b);
 	return 0;
 }
